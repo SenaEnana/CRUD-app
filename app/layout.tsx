@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 // const geistSans = Geist({
-//   variable: "--font-geist-sans",
 
 
 export const metadata: Metadata = {
