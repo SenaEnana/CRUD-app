@@ -58,7 +58,7 @@ Open http://localhost:3000 with your browser to see the application in action!
 
 A quick overview of the key directories in this project:
   
-* ├── components/       # Reusable UI components (Form, Card, Layout, Navbar)
+* ├── api/              # Reusable API end-points
 * ├── pages/ or app/    # Next.js routing and page views
 * ├── public/           # Static assets like images and icons
 * ├── styles/           # Global styles and Tailwind configurations
