@@ -7,8 +7,6 @@ import "./globals.css";
 //   subsets: ["latin"],
 // });
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
 
 export const metadata: Metadata = {
   title: "CRUD App",
