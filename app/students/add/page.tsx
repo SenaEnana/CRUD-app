@@ -83,7 +83,7 @@ export default function AddStudentPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-1/2 bg-amber-500 hover:bg-amber-600 text-gray-900 font-medium py-2.5 rounded-lg text-sm shadow transition-colors disabled:opacity-50"
+              className="w-1/2 bg-green-500 hover:bg-green-600 text-gray-900 font-medium py-2.5 rounded-lg text-sm shadow transition-colors disabled:opacity-50"
             >
               {isSubmitting ? "Saving..." : "Save Student"}
             </button>
