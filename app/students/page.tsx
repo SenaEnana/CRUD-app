@@ -57,7 +57,7 @@ export default function StudentsPage() {
             </Link>
             <Link
               href="/students/add"
-              className="bg-green-600 hover:bg-blue-700 text-black px-4 py-2 rounded-lg text-sm font-medium shadow transition-colors"
+              className="bg-green-600 hover:bg-green-700 text-black px-4 py-2 rounded-lg text-sm font-medium shadow transition-colors"
             >
               + Add Student
             </Link>
