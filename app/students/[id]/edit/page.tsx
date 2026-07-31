@@ -65,6 +65,7 @@ export default function EditStudentPage({ params }: EditProps) {
       });
 
       if (res.ok) {
+        router.push("/students?message=Student profile modified successfully.");
         router.push("/students");
       } else {
         setError("Failed to update student.");
