@@ -16,7 +16,6 @@ export default function EditStudentPage({ params }: EditProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
 
-  // Fetch initial student data for pre-population
   useEffect(() => {
     const fetchStudent = async () => {
       try {
@@ -65,7 +64,7 @@ export default function EditStudentPage({ params }: EditProps) {
       });
 
       if (res.ok) {
-        router.push("/students");
+        router.push("/students?message=Student profile modified successfully.");
       } else {
         setError("Failed to update student.");
       }
