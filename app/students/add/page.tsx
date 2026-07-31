@@ -13,7 +13,6 @@ export default function AddStudentPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validation checks
     const trimmedName = name.trim();
     if (!trimmedName) {
       setError("Student name cannot be empty.");
@@ -36,11 +35,9 @@ export default function AddStudentPage() {
 
       if (res.ok) {
         router.push("/students?message=Student records created successfully.");
-        router.push("/students");
       } else {
         setError("Failed to create student. Please try again.");
       }
-
     } catch (err) {
       console.error("ERROR:", err);
       setError("An unexpected error occurred.");
@@ -85,7 +82,7 @@ export default function AddStudentPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-1/2 bg-green-500 hover:bg-green-600 text-gray-900 font-medium py-2.5 rounded-lg text-sm shadow transition-colors disabled:opacity-50"
+              className="w-1/2 bg-amber-500 hover:bg-amber-600 text-gray-900 font-medium py-2.5 rounded-lg text-sm shadow transition-colors disabled:opacity-50"
             >
               {isSubmitting ? "Saving..." : "Save Student"}
             </button>
