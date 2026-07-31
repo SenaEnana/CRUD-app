@@ -84,3 +84,50 @@ export default function EditStudentPage({ params }: EditProps) {
       </div>
     );
   }
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+      <div className="max-w-md w-full bg-white shadow-sm border border-gray-200 rounded-xl p-8">
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">Edit Student</h1>
+        <p className="text-gray-500 text-sm mb-6">Update details for ID: {id}</p>
+
+        <form onSubmit={handleUpdate} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Full Name
+            </label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+                if (error) setError("");
+              }}
+              placeholder="e.g., John Doe"
+              className={`w-full border p-2.5 rounded-lg text-gray-900 focus:outline-none focus:ring-2 ${
+                error ? "border-red-500 focus:ring-red-200" : "border-gray-300 focus:ring-blue-200"
+              }`}
+            />
+            {error && <p className="text-red-500 text-xs mt-1.5">{error}</p>}
+          </div>
+
+          <div className="flex gap-3 pt-2">
+            <Link
+              href="/students"
+              className="w-1/2 bg-gray-100 hover:bg-gray-200 text-gray-700 text-center py-2.5 rounded-lg font-medium text-sm transition-colors"
+            >
+              Cancel
+            </Link>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-1/2 bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2.5 rounded-lg text-sm shadow transition-colors disabled:opacity-50"
+            >
+              {isSubmitting ? "Updating..." : "Update Student"}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
