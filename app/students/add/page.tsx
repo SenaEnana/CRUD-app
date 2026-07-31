@@ -35,10 +35,12 @@ export default function AddStudentPage() {
       });
 
       if (res.ok) {
+        router.push("/students?message=Student records created successfully.");
         router.push("/students");
       } else {
         setError("Failed to create student. Please try again.");
       }
+
     } catch (err) {
       console.error("ERROR:", err);
       setError("An unexpected error occurred.");
