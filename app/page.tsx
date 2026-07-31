@@ -68,7 +68,7 @@ export default function Home() {
       <input
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder="Enter item..."
+        placeholder="Enter Name..."
         className="border border-gray-300 p-2 text-black rounded-l-md w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
 
@@ -103,7 +103,7 @@ export default function Home() {
           {items.length === 0 ? (
             <tr>
               <td colSpan={3} className="text-center p-4">
-                No items found
+                No students found
               </td>
             </tr>
           ) : (
