@@ -8,7 +8,7 @@ export default function Home() {
           Student Information System
         </h1>
         <p className="text-gray-600 mb-6">
-          A portfolio-ready CRUD application built with Next.js App Router, Tailwind CSS, and API routing.
+          A CRUD application built with Next.js App Router, Tailwind CSS, and API routing.
         </p>
         <Link
           href="/students"
