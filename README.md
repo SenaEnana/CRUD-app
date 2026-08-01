@@ -24,6 +24,13 @@ A lightweight, responsive CRUD (Create, Read, Update, Delete) web application bu
 
 ---
 
+## 📸 Screenshots
+
+<img width="1144" height="731" alt="crud-app-three-puce vercel app_" src="https://github.com/user-attachments/assets/5d803966-671f-4ab4-8e90-e56db95232e4" />
+
+
+---
+
 ## 📦 Getting Started
 
 Follow these simple steps to get a local copy of the project up and running.
